@@ -14,7 +14,7 @@
 * c:\UCI HAR Dataset\UCI HAR Dataset\test
 * c:\UCI HAR Dataset\UCI HAR Dataset\train
 
-* Copy the sub folder ..\UCI HAR Dataset (not c:\UCI HAR Dataset) and rename
+* Copy the sub folder ..\UCI HAR Dataset (not c:\UCI HAR Dataset) to the working directory and rename to "extracted-data"
 
 ##Execute script
 
