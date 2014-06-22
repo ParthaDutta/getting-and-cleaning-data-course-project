@@ -1,82 +1,5 @@
 
-
-
-
-describes the variables, 
-describes the data
-describes any transformations
-describes any work that you performed to clean up the data 
-
-
-
-
-1 tBodyAccMeanAxisX
-2 tBodyAccMeanAxisY
-3 tBodyAccMeanAxisZ
-4 tBodyAccStandardDeviationAxisX
-5 tBodyAccStandardDeviationAxisY
-6 tBodyAccStandardDeviationAxisZ
-41 tGravityAccMeanAxisX
-42 tGravityAccMeanAxisY
-43 tGravityAccMeanAxisZ
-44 tGravityAccStandardDeviationAxisX
-45 tGravityAccStandardDeviationAxisY
-46 tGravityAccStandardDeviationAxisZ
-81 tBodyAccJerkMeanAxisX
-82 tBodyAccJerkMeanAxisY
-83 tBodyAccJerkMeanAxisZ
-84 tBodyAccJerkStandardDeviationAxisX
-85 tBodyAccJerkStandardDeviationAxisY
-86 tBodyAccJerkStandardDeviationAxisZ
-121 tBodyGyroMeanAxisX
-122 tBodyGyroMeanAxisY
-123 tBodyGyroMeanAxisZ
-124 tBodyGyroStandardDeviationAxisX
-125 tBodyGyroStandardDeviationAxisY
-126 tBodyGyroStandardDeviationAxisZ
-161 tBodyGyroJerkMeanAxisX
-162 tBodyGyroJerkMeanAxisY
-163 tBodyGyroJerkMeanAxisZ
-164 tBodyGyroJerkStandardDeviationAxisX
-165 tBodyGyroJerkStandardDeviationAxisY
-166 tBodyGyroJerkStandardDeviationAxisZ
-201 tBodyAccMagMean
-202 tBodyAccMagStandardDeviation
-214 tGravityAccMagMean
-215 tGravityAccMagStandardDeviation
-227 tBodyAccJerkMagMean
-228 tBodyAccJerkMagStandardDeviation
-240 tBodyGyroMagMean
-241 tBodyGyroMagStandardDeviation
-253 tBodyGyroJerkMagMean
-254 tBodyGyroJerkMagStandardDeviation
-266 fBodyAccMeanAxisX
-267 fBodyAccMeanAxisY
-268 fBodyAccMeanAxisZ
-269 fBodyAccStandardDeviationAxisX
-270 fBodyAccStandardDeviationAxisY
-271 fBodyAccStandardDeviationAxisZ
-345 fBodyAccJerkMeanAxisX
-346 fBodyAccJerkMeanAxisY
-347 fBodyAccJerkMeanAxisZ
-348 fBodyAccJerkStandardDeviationAxisX
-349 fBodyAccJerkStandardDeviationAxisY
-350 fBodyAccJerkStandardDeviationAxisZ
-424 fBodyGyroMeanAxisX
-425 fBodyGyroMeanAxisY
-426 fBodyGyroMeanAxisZ
-427 fBodyGyroStandardDeviationAxisX
-428 fBodyGyroStandardDeviationAxisY
-429 fBodyGyroStandardDeviationAxisZ
-503 fBodyAccMagMean
-504 fBodyAccMagStandardDeviation
-516 fBodyBodyAccJerkMagMean
-517 fBodyBodyAccJerkMagStandardDeviation
-529 fBodyBodyGyroMagMean
-530 fBodyBodyGyroMagStandardDeviation
-542 fBodyBodyGyroJerkMagMean
-543 fBodyBodyGyroJerkMagStandardDeviation
-
+##Variables selected from raw dataset("X_train.txt" and "X_test.txt")
 
 1 tBodyAcc-mean()-X
 2 tBodyAcc-mean()-Y
@@ -84,44 +7,36 @@ describes any work that you performed to clean up the data
 4 tBodyAcc-std()-X
 5 tBodyAcc-std()-Y
 6 tBodyAcc-std()-Z
-
 41 tGravityAcc-mean()-X
 42 tGravityAcc-mean()-Y
 43 tGravityAcc-mean()-Z
 44 tGravityAcc-std()-X
 45 tGravityAcc-std()-Y
 46 tGravityAcc-std()-Z
-
 81 tBodyAccJerk-mean()-X
 82 tBodyAccJerk-mean()-Y
 83 tBodyAccJerk-mean()-Z
 84 tBodyAccJerk-std()-X
 85 tBodyAccJerk-std()-Y
 86 tBodyAccJerk-std()-Z
-
 121 tBodyGyro-mean()-X
 122 tBodyGyro-mean()-Y
 123 tBodyGyro-mean()-Z
 124 tBodyGyro-std()-X
 125 tBodyGyro-std()-Y
 126 tBodyGyro-std()-Z
-
 161 tBodyGyroJerk-mean()-X
 162 tBodyGyroJerk-mean()-Y
 163 tBodyGyroJerk-mean()-Z
 164 tBodyGyroJerk-std()-X
 165 tBodyGyroJerk-std()-Y
 166 tBodyGyroJerk-std()-Z
-
 201 tBodyAccMag-mean()
 202 tBodyAccMag-std()
-
 214 tGravityAccMag-mean()
 215 tGravityAccMag-std()
-
 227 tBodyAccJerkMag-mean()
 228 tBodyAccJerkMag-std()
-
 240 tBodyGyroMag-mean()
 241 tBodyGyroMag-std()
 253 tBodyGyroJerkMag-mean()
@@ -152,3 +67,79 @@ describes any work that you performed to clean up the data
 530 fBodyBodyGyroMag-std()
 542 fBodyBodyGyroJerkMag-mean()
 543 fBodyBodyGyroJerkMag-std()
+
+##Variables names of tidy dataset are
+
+ activityName
+ volunteerID
+ tBodyAccMeanAxisX
+ tBodyAccMeanAxisY
+ tBodyAccMeanAxisZ
+ tBodyAccStandardDeviationAxisX
+ tBodyAccStandardDeviationAxisY
+ tBodyAccStandardDeviationAxisZ
+ tGravityAccMeanAxisX
+ tGravityAccMeanAxisY
+ tGravityAccMeanAxisZ
+ tGravityAccStandardDeviationAxisX
+ tGravityAccStandardDeviationAxisY
+ tGravityAccStandardDeviationAxisZ
+ tBodyAccJerkMeanAxisX
+ tBodyAccJerkMeanAxisY
+ tBodyAccJerkMeanAxisZ
+ tBodyAccJerkStandardDeviationAxisX
+ tBodyAccJerkStandardDeviationAxisY
+ tBodyAccJerkStandardDeviationAxisZ
+ tBodyGyroMeanAxisX
+ tBodyGyroMeanAxisY
+ tBodyGyroMeanAxisZ
+ tBodyGyroStandardDeviationAxisX
+ tBodyGyroStandardDeviationAxisY
+ tBodyGyroStandardDeviationAxisZ
+ tBodyGyroJerkMeanAxisX
+ tBodyGyroJerkMeanAxisY
+ tBodyGyroJerkMeanAxisZ
+ tBodyGyroJerkStandardDeviationAxisX
+ tBodyGyroJerkStandardDeviationAxisY
+ tBodyGyroJerkStandardDeviationAxisZ
+ tBodyAccMagMean
+ tBodyAccMagStandardDeviation
+ tGravityAccMagMean
+ tGravityAccMagStandardDeviation
+ tBodyAccJerkMagMean
+ tBodyAccJerkMagStandardDeviation
+ tBodyGyroMagMean
+ tBodyGyroMagStandardDeviation
+ tBodyGyroJerkMagMean
+ tBodyGyroJerkMagStandardDeviation
+ fBodyAccMeanAxisX
+ fBodyAccMeanAxisY
+ fBodyAccMeanAxisZ
+ fBodyAccStandardDeviationAxisX
+ fBodyAccStandardDeviationAxisY
+ fBodyAccStandardDeviationAxisZ
+ fBodyAccJerkMeanAxisX
+ fBodyAccJerkMeanAxisY
+ fBodyAccJerkMeanAxisZ
+ fBodyAccJerkStandardDeviationAxisX
+ fBodyAccJerkStandardDeviationAxisY
+ fBodyAccJerkStandardDeviationAxisZ
+ fBodyGyroMeanAxisX
+ fBodyGyroMeanAxisY
+ fBodyGyroMeanAxisZ
+ fBodyGyroStandardDeviationAxisX
+ fBodyGyroStandardDeviationAxisY
+ fBodyGyroStandardDeviationAxisZ
+ fBodyAccMagMean
+ fBodyAccMagStandardDeviation
+ fBodyBodyAccJerkMagMean
+ fBodyBodyAccJerkMagStandardDeviation
+ fBodyBodyGyroMagMean
+ fBodyBodyGyroMagStandardDeviation
+ fBodyBodyGyroJerkMagMean
+ fBodyBodyGyroJerkMagStandardDeviation
+
+
+"tBodyAccMeanAxisX","tBodyAccMeanAxisY","tBodyAccMeanAxisZ","tBodyAccStandardDeviationAxisX","tBodyAccStandardDeviationAxisY","tBodyAccStandardDeviationAxisZ","tGravityAccMeanAxisX","tGravityAccMeanAxisY","tGravityAccMeanAxisZ","tGravityAccStandardDeviationAxisX","tGravityAccStandardDeviationAxisY","tGravityAccStandardDeviationAxisZ","tBodyAccJerkMeanAxisX","tBodyAccJerkMeanAxisY","tBodyAccJerkMeanAxisZ","tBodyAccJerkStandardDeviationAxisX","tBodyAccJerkStandardDeviationAxisY","tBodyAccJerkStandardDeviationAxisZ","tBodyGyroMeanAxisX","tBodyGyroMeanAxisY","tBodyGyroMeanAxisZ","tBodyGyroStandardDeviationAxisX","tBodyGyroStandardDeviationAxisY","tBodyGyroStandardDeviationAxisZ","tBodyGyroJerkMeanAxisX","tBodyGyroJerkMeanAxisY","tBodyGyroJerkMeanAxisZ","tBodyGyroJerkStandardDeviationAxisX","tBodyGyroJerkStandardDeviationAxisY","tBodyGyroJerkStandardDeviationAxisZ","tBodyAccMagMean","tBodyAccMagStandardDeviation","tGravityAccMagMean","tGravityAccMagStandardDeviation","tBodyAccJerkMagMean","tBodyAccJerkMagStandardDeviation","tBodyGyroMagMean","tBodyGyroMagStandardDeviation","tBodyGyroJerkMagMean","tBodyGyroJerkMagStandardDeviation","fBodyAccMeanAxisX","fBodyAccMeanAxisY","fBodyAccMeanAxisZ","fBodyAccStandardDeviationAxisX","fBodyAccStandardDeviationAxisY","fBodyAccStandardDeviationAxisZ","fBodyAccJerkMeanAxisX","fBodyAccJerkMeanAxisY","fBodyAccJerkMeanAxisZ","fBodyAccJerkStandardDeviationAxisX","fBodyAccJerkStandardDeviationAxisY","fBodyAccJerkStandardDeviationAxisZ","fBodyGyroMeanAxisX","fBodyGyroMeanAxisY","fBodyGyroMeanAxisZ","fBodyGyroStandardDeviationAxisX","fBodyGyroStandardDeviationAxisY","fBodyGyroStandardDeviationAxisZ","fBodyAccMagMean","fBodyAccMagStandardDeviation","fBodyBodyAccJerkMagMean","fBodyBodyAccJerkMagStandardDeviation","fBodyBodyGyroMagMean","fBodyBodyGyroMagStandardDeviation","fBodyBodyGyroJerkMagMean","fBodyBodyGyroJerkMagStandardDeviation"
+"V1","V2","V3","V4","V5","V6","V41","V42","V43","V44","V45","V46","V81","V82","V83","V84","V85","V86","V121","V122","V123","V124","V125","V126","V161","V162","V163","V164","V165","V166","V201","V202","V214","V215","V227","V228","V240","V241","V253","V254","V266","V267","V268","V269","V270","V271","V345","V346","V347","V348","V349","V350","V424","V425","V426","V427","V428","V429","V503","V504","V516","V517","V529","V530","V542","V543"
+
