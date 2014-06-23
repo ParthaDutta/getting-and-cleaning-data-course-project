@@ -69,6 +69,9 @@
 
 ##Variables names of tidy dataset are
 
+* All variables have normalised and bounder between -1 and 1 and so have no units of measure
+* The exception are "activityName" which is a string and volunteerID which is a integer
+
 * activityName
 * volunteerID
 * tBodyAccMeanAxisX
