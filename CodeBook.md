@@ -1,3 +1,5 @@
+#How to tidy data
+
 ##Variables selected from raw dataset("X_train.txt" and "X_test.txt")
 
 * 1 tBodyAcc-mean()-X
@@ -71,7 +73,7 @@
 
 * "activityName" is a string
 * "volunteerID" is a integer
-* All variables have normalised and bounder between -1 and 1 and so have no units of measure
+* All other variables have normalised and bounder between -1 and 1 and so have no units of measure
 
 
 * activityName
@@ -142,3 +144,12 @@
 * fBodyBodyGyroMagStandardDeviation
 * fBodyBodyGyroJerkMagMean
 * fBodyBodyGyroJerkMagStandardDeviation
+
+#Summarise tidy data for each activity and volunteer
+
+##Variables names of tidy dataset are
+
+* "activityName" is a string
+* "volunteerID" is a integer
+* All other variables have normalised, bounder between -1 and 1, and subsequently averaged and so have no units of measure
+* All other variables names start with mean_XXXXXXXXXXX

@@ -1,3 +1,7 @@
+#I missed my deadline by a couple of hours due to bad time management.
+#You will need to make a judgement call as to whether to score work submitted after the deadline  
+
+
 #How to tidy data
 
 ##Initial setup
@@ -40,3 +44,19 @@
 ##Notes
 
 * Processing could be done several different ways, but I tried to keep the code simple and readable
+
+
+#Summarise tidy data for each activity and volunteer
+
+##Execute script
+
+* After sourcing the R script run_analysis, execute the function createSummary(). Assumes that the tidy dataset has already been created
+
+##Outline of how the script creates the summary data
+
+* Load tidy data from file
+* Load and and utilise the grouping capabilities in the library package "reshape"
+* Write back out to file - mean-data.txt
+
+
+
