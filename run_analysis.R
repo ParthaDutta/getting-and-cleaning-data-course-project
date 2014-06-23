@@ -32,5 +32,19 @@ createTidyData <- function() {
     
     #write tidy data to file
     write.csv(combinedDataSelectedColumns, file = "tidy-data.txt", row.names = FALSE)
+        
+}
+
+createSummary <- function() {
+  
+    library(reshape)
+    
+    tidy_data <- read.csv("tidy-data.txt")
+    pivoted_data <- melt(tidy_data, id=(c("activityName", "volunteerID")))
+    mean_data <- cast(pivoted_data, activityName+volunteerID~variable, mean)
+    
+    colnames(mean_data) <- c("activityName", "volunteerID", "mean_tBodyAccMeanAxisX", "mean_tBodyAccMeanAxisY", "mean_tBodyAccMeanAxisZ", "mean_tBodyAccStandardDeviationAxisX", "mean_tBodyAccStandardDeviationAxisY", "mean_tBodyAccStandardDeviationAxisZ", "mean_tGravityAccMeanAxisX", "mean_tGravityAccMeanAxisY", "mean_tGravityAccMeanAxisZ", "mean_tGravityAccStandardDeviationAxisX", "mean_tGravityAccStandardDeviationAxisY", "mean_tGravityAccStandardDeviationAxisZ", "mean_tBodyAccJerkMeanAxisX", "mean_tBodyAccJerkMeanAxisY", "mean_tBodyAccJerkMeanAxisZ", "mean_tBodyAccJerkStandardDeviationAxisX", "mean_tBodyAccJerkStandardDeviationAxisY", "mean_tBodyAccJerkStandardDeviationAxisZ", "mean_tBodyGyroMeanAxisX", "mean_tBodyGyroMeanAxisY", "mean_tBodyGyroMeanAxisZ", "mean_tBodyGyroStandardDeviationAxisX", "mean_tBodyGyroStandardDeviationAxisY", "mean_tBodyGyroStandardDeviationAxisZ", "mean_tBodyGyroJerkMeanAxisX", "mean_tBodyGyroJerkMeanAxisY", "mean_tBodyGyroJerkMeanAxisZ", "mean_tBodyGyroJerkStandardDeviationAxisX", "mean_tBodyGyroJerkStandardDeviationAxisY", "mean_tBodyGyroJerkStandardDeviationAxisZ", "mean_tBodyAccMagMean", "mean_tBodyAccMagStandardDeviation", "mean_tGravityAccMagMean", "mean_tGravityAccMagStandardDeviation", "mean_tBodyAccJerkMagMean", "mean_tBodyAccJerkMagStandardDeviation", "mean_tBodyGyroMagMean", "mean_tBodyGyroMagStandardDeviation", "mean_tBodyGyroJerkMagMean", "mean_tBodyGyroJerkMagStandardDeviation", "mean_fBodyAccMeanAxisX", "mean_fBodyAccMeanAxisY", "mean_fBodyAccMeanAxisZ", "mean_fBodyAccStandardDeviationAxisX", "mean_fBodyAccStandardDeviationAxisY", "mean_fBodyAccStandardDeviationAxisZ", "mean_fBodyAccJerkMeanAxisX", "mean_fBodyAccJerkMeanAxisY", "mean_fBodyAccJerkMeanAxisZ", "mean_fBodyAccJerkStandardDeviationAxisX", "mean_fBodyAccJerkStandardDeviationAxisY", "mean_fBodyAccJerkStandardDeviationAxisZ", "mean_fBodyGyroMeanAxisX", "mean_fBodyGyroMeanAxisY", "mean_fBodyGyroMeanAxisZ", "mean_fBodyGyroStandardDeviationAxisX", "mean_fBodyGyroStandardDeviationAxisY", "mean_fBodyGyroStandardDeviationAxisZ", "mean_fBodyAccMagMean", "mean_fBodyAccMagStandardDeviation", "mean_fBodyBodyAccJerkMagMean", "mean_fBodyBodyAccJerkMagStandardDeviation", "mean_fBodyBodyGyroMagMean", "mean_fBodyBodyGyroMagStandardDeviation", "mean_fBodyBodyGyroJerkMagMean", "mean_fBodyBodyGyroJerkMagStandardDeviation")
+    
+    write.csv(mean_data, file = "mean_data.txt", row.names = FALSE)
     
 }
